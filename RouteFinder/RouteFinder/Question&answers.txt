@@ -1,0 +1,43 @@
+How many Microservices have you built and launched? Please provide examples of their functions/purpose.
+Till current project, I have build 3 Mircoservices built and productionaized. One is Bulk upload funcationality(File Upload) where user can upload data to Rest service to process the data record by record. each record has a Business date to process the remaining feild to process. Service will check the Business date with current date if it match the current date it'll pick the record and it'll starts the process.
+
+Business solution,export the data from higher environments into a file and run the same data in lower environments to match the output result, which avoid lot for efforts and manula intervesion of diffrent teams.
+
+What are the top-3 design principles that you pay attention to while building any Microservice?
+
+1.Small and Simple with SSO and Oauth mechanism
+2.Stateless protocal communcation(identify by tokenization concepts)
+3.Independent(deploy and run in any server)
+
+
+What are the top-3 principles that helps run the operation of any Microservice in Production?
+	1.Readbuility
+	2.Scalability
+	3.Performance
+
+What DevOps tools are you most comfortable with?
+	1.Docker
+	2.Jenkins pipeline
+	
+	
+In a paragraph or two, please share the details of a technical problem that you are most proud of fixing?
+
+	Multiple user started the process job process with different files data for same business date which will override the out put results
+		Technologies
+			Java,Spring Batch,Spring boot,DataJPA,Spark,Spring RestAPI,Angular 2.x
+		Business Background
+			execute the customers data to generate score to identify the top most customers for specific region
+		Negative impact
+			impact the out come of the results if you run for different business dates (each month or each quarter the customers will changes)
+	Solution
+		we make the process to max limit to 6 for different business dates, if process already in progress if the record identify in other files(will show the information to the user it's already processed for this business date, please check the results)
+		Mark the process as completed or failed, won't pick the completed process(will check the combination of business date of the record)
+		failed process can re-initiate in next file if it found.
+
+
+		
+How comfortable are you designing and developing using Sprint Boot?
+
+	Spring boot i can give rating my self out 9/10, My last two project, design and development the Spring boot  1.5.7 with SprignDataJPA with Oracle combination
+	and other project I upgrade the 1.4.x to 1.5.9 to over come Backduck scan and SSAP scan issues(which identify the vulnerability and security issues at organisation level)  
+		
