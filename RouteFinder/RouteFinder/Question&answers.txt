@@ -14,6 +14,7 @@ What are the top-3 principles that helps run the operation of any Microservice i
 	1.Readbuility
 	2.Scalability
 	3.Performance
+	4.Readability
 
 What DevOps tools are you most comfortable with?
 	1.Docker
